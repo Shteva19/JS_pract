@@ -1,15 +1,15 @@
 let userInput = "test string";
-let newString = "test string";
-let charToChange = ''
-
+let newString = "";
+let vowels = "a,e,i,o,u";
 
 for (let i = 0; i < userInput.length; i++) {
     let currentChar = userInput[i];
-    if (currentChar === 'a' || currentChar === 'e' || currentChar === 'i' || currentChar === 'o' || currentChar === 'u') {
-        vowelCount = vowelCount + 1;
-        console.log(`Знайдена голосна літера! Індекс ${i}, літера ${currentChar}`)
+    
+    if (vowels.includes(currentChar)) {
+        newString += "*";
+    } else {
+        newString += currentChar;
     }
 }
 
-
-console.log(`Кількість голосних літер: ${vowelCount}`);
+console.log("Змінений рядок:", newString);
