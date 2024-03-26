@@ -1,10 +1,9 @@
 import Dog from "./task2.js";
 
-
 class Shepherd extends Dog {
 
-    constructor(color, name, type, breed, favoriteFood) {
-        super(color, name, type, breed);
+    constructor(color, name, type, age, breed, size, favoriteFood) {
+        super(color, name, type, age, breed, size);
         this.favoriteFood = favoriteFood;
     }
    
@@ -12,8 +11,8 @@ class Shepherd extends Dog {
         console.log(`${this.name} is guarding.`);
     }
 }
-const germanShepherd = new Shepherd("Brown", "Rex", "Dog", "German Shepherd", "Meat");
-const australianShepherd = new Shepherd("Black and White", "Buddy", "Dog", "Australian Shepherd", "Fish");
+const germanShepherd = new Shepherd("Brown", "Rex", "Dog",1,  "German Shepherd", 200, "Meat");
+const australianShepherd = new Shepherd("Black and White", "Buddy", "Dog", 7,"Australian Shepherd",150, "Fish");
 
 console.log(germanShepherd);
 console.log(australianShepherd);
